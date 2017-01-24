@@ -7,6 +7,7 @@ Finance Values Exercise
 - I've used close prices, but this is configurable: currently by changing the hardcoded "Close" value passed to the service
 - I've used the arithmetic mean in the 3rd function, there was no details on which type of average to use
 - There is a DateProvider (with a SystemDateProvider simple implementation) to allow mocking of the service call using a real value returned by the mocked date provider
+- There is one assumption: that the prices returned by the finance service are sorted by date
 
 - Main class: Pricer
 - Test: PricerSpec
@@ -20,3 +21,4 @@ Possible evolutions
 - Use a more advanced HTTP library
 - Make the type of price truly configurable (in application.conf or similar)
 - Make it reactive: handle futures from the HTTP layer, maybe use concurrency to compute values faster, etc.
+- Make sure the prices are correctly ordere by date, or sort them to be sure
