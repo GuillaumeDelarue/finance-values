@@ -18,10 +18,8 @@ class YahooFinanceServiceIntegrationSpec extends WordSpecLike with Matchers with
     }
 
     "produce different prices when a different price type is used" in {
-      val closePriceService = YahooFinanceService("Close")
-      val closePrices = closePriceService.downloadOneYearWorthOfPrices(lastDate, ticker)
-      val openPriceService = YahooFinanceService("Open")
-      val openPrices = openPriceService.downloadOneYearWorthOfPrices(lastDate, ticker)
+      val closePrices = YahooFinanceService("Close").downloadOneYearWorthOfPrices(lastDate, ticker)
+      val openPrices = YahooFinanceService("Open").downloadOneYearWorthOfPrices(lastDate, ticker)
 
       closePrices.size shouldBe openPrices.size
       closePrices should not be openPrices
