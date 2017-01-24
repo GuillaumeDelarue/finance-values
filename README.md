@@ -11,7 +11,7 @@ Finance Values Exercise
 
 - Main class: Pricer
 - Test: PricerSpec
-- Integration tests: YahooFinanceServiceIntegrationSpec + PricerIntegrationSpec
+- Integration tests: YahooFinanceServiceIntegrationSpec
 
 
 Possible evolutions
