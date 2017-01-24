@@ -5,11 +5,11 @@ Finance Values Exercise
 - No acceptance test has been written, as they should be written with the business or BA (using Cucumber, etc.)
 - YahooFinanceService: I wrapped the provided URL in a simple Source.fromUrl. This has no timeout, on a production environment I would probably use some more advanced library - scalatra, Play, etc? Depending on the choice of the team / architects
 - I've used close prices, but this is configurable: currently by changing the hardcoded "Close" value passed to the service
-- I've used the arithmetic mean, because there was no details on which type of mean to use
+- I've used the arithmetic mean in the 3rd function, there was no details on which type of average to use
 
 - Main class: Pricer
 - Test: PricerSpec
-- IntegrationSpec: YahooFinanceServiceIntegrationSpec
+- Integration tests: YahooFinanceServiceIntegrationSpec + PricerIntegrationSpec
 
 
 Possible evolutions
