@@ -15,7 +15,7 @@ Finance Values Exercise
 Possible evolutions
 ===================
 
-- Add acceptance test using (This should have been done using BDD)
+- Add acceptance test using Cucumber or similar (This should have been done using BDD)
 - Use a more advanced HTTP library
 - Make the type of price truly configurable (in application.conf or similar)
-- Make it reactive: handle futures, etc.
+- Make it reactive: handle futures from the HTTP layer, maybe use concurrency to compute values faster, etc.
