@@ -6,6 +6,7 @@ Finance Values Exercise
 - YahooFinanceService: I wrapped the provided URL in a simple Source.fromUrl. This has no timeout, on a production environment I would probably use some more advanced library - scalatra, Play, etc? Depending on the choice of the team / architects
 - I've used close prices, but this is configurable: currently by changing the hardcoded "Close" value passed to the service
 - I've used the arithmetic mean in the 3rd function, there was no details on which type of average to use
+- There is a DateProvider (with a SystemDateProvider simple implementation) to allow mocking of the service call using a real value returned by the mocked date provider
 
 - Main class: Pricer
 - Test: PricerSpec
